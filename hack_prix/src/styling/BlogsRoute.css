@@ -2,9 +2,10 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-top: 50px;
+    margin:80px;
+    /* margin-top: 50px; */
     justify-content: center; /* Center the cards within the container */
-    padding-top: 20px;
+    /* padding-top: 20px; */
     padding-left: 130px;
     padding-bottom: 10px;
     gap: 20px; /* Adjust this value to control the gap between rows and columns */
