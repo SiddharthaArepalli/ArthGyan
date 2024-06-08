@@ -15,8 +15,16 @@
 }
 .p1-content{
     margin: 100px;
+    display: flex;
+    margin-bottom: 0px;
+}
+.p1-content-right video{
+    z-index: -10;
     width: 600px;
-   
+    height: 600px;
+    position: relative;
+    bottom: 190px;
+    left: 120px;
 }
 .p1-content h1{
     font-size: 64px;

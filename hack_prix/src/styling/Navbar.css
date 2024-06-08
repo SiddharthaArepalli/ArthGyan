@@ -64,3 +64,15 @@ nav li a:active{
     border: 2px solid white;
     color: white;
 }
+.btn-join{
+    font-size: 18px;
+    border-radius: 10px;
+     height: 40px;
+     width: 200px;
+     border: none;
+     color: #436AF5;
+     cursor: pointer;
+     font-weight: 300;
+     padding-top: 5px;
+     background-color: white;
+}

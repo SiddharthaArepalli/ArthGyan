@@ -2,20 +2,33 @@ import "../styling/Homepage.css"
 import Navbar from "../components/Navbar"
 import icon from "../assets/box.png"
 import Footer from "../components/Footer"
+import video from '../assets/video.mp4'
 export default function HomeRoute() {
     return (
         <div className="Home">
             <Navbar />
             <div className="p1-content">
-                <h1 >
-                    Empower Your <span className="special-color">Financial Journey</span> with ArthGyan
-                </h1>
-                <p>
-                    Discover the world of finance and enhance your financial literacy with our AI-powered chatbot, insightful finance blogs, latest market trends, SIP calculator, and engaging finance quiz.
-                </p>
-                <div className="btn-cont">
-                    <button className="btn-cont-1">Get Started</button>
-                    <button className="btn-cont-2">Learn More</button>
+                <div className="p1-content-left">
+                    <h1 >
+                        Empower Your <span className="special-color">Financial Journey</span> with ArthGyan
+                    </h1>
+                    <p>
+                        Discover the world of finance and enhance your financial literacy with our AI-powered chatbot, insightful finance blogs, latest market trends, SIP calculator, and engaging finance quiz.
+                    </p>
+                    <div className="btn-cont">
+                        <button className="btn-cont-1">Get Started</button>
+                        <button className="btn-cont-2">Learn More</button>
+                    </div>
+                </div>
+                <div className="p1-content-right">
+                    <video src={video}  autoPlay 
+                muted 
+                loop 
+                preload="auto" 
+
+                playsInline 
+                disablePictureInPicture
+                 />
                 </div>
             </div>
             <div className="p2-content">
