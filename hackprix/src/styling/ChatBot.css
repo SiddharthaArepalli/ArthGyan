@@ -1,0 +1,65 @@
+.chat-bot{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-bot-inner{
+  width: 900px;
+  height: 90vh;
+  background-color: rgb(205, 232, 255);
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-section {
+  flex: 1; /* This will make the chat section expand to fill the available space */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Reduce the gap for better spacing */
+  padding: 20px; /* Add padding for better appearance */
+  overflow-y: auto;
+  scrollbar-width: none;
+  /* Enable vertical scrolling when needed */
+}
+
+.right-msg {
+  align-self: flex-end; 
+  padding: 12px; /* Reduce padding for better appearance */
+  border-radius: 18px;
+  background: #436af5;
+  color: white;
+}
+
+.left-msg {
+  align-self: flex-start; 
+  max-width: 600px;
+  background-color: #081957;
+  color: white;
+  padding: 12px; /* Reduce padding for better appearance */
+  border-radius: 18px;
+}
+
+.send-section {
+  margin-top: auto; /* Push the send section to the bottom */
+  padding: 20px; /* Add padding for better appearance */
+  background-color: #6294ac;
+}
+
+.send-section input {
+  height: 40px; /* Reduce height for better appearance */
+  width: calc(100% - 100px); /* Adjust width to fill available space */
+  padding: 0px 20px;
+  border: 2px solid #436af5;
+  border-radius: 18px;
+  margin-right: 10px; /* Add some margin between input and button */
+}
+
+.send-btn {
+  height: 40px; /* Reduce height for better appearance */
+  padding: 0 20px; /* Adjust padding for better appearance */
+  border: 2px solid #436af5;
+  border-radius: 18px;
+  background-color: #859df142;
+  cursor: pointer;
+}
