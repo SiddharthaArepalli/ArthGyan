@@ -11,7 +11,7 @@ function Footer() {
                     <li className="link"><a href="/trends" className="link-trends">Trends</a></li>
                     <li className="link"><a href="/tools" className="link-tools">Tools</a></li>
                     <li className="link"><a href="/blogs" className="link-blogs">Blogs</a></li>
-                    <li className="link"><a href="/finbot" className="link-finbot">FinBot</a></li>
+                    <li className="link"><a href="/chatbot" className="link-finbot">FinBot</a></li>
                 </div>
 
                 <div className="news-letter">
