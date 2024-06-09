@@ -1,34 +1,55 @@
-import "../styling/Homepage.css"
-import Navbar from "../components/Navbar"
-import icon from "../assets/box.png"
-import Footer from "../components/Footer"
-import video from '../assets/video.mp4'
+import "../styling/Homepage.css";
+import Navbar from "../components/Navbar";
+import icon from "../assets/box.png";
+import Footer from "../components/Footer";
+import video from '../assets/video.mp4';
+import { useNavigate } from 'react-router-dom';
+
 export default function HomeRoute() {
+    const navigate = useNavigate();
+
+    const get_started = () => {
+        navigate('/chatbot');
+    };
+
+    const learn_more = () => {
+        navigate('/blogs');
+    };
+
+    const get_started_trends = () =>{
+        navigate('/trends');
+    }
+
+    const learn_more_tools = () =>{
+        navigate('/tools');
+    }
+
     return (
         <div className="Home">
             <Navbar />
             <div className="p1-content">
                 <div className="p1-content-left">
-                    <h1 >
+                    <h1>
                         Empower Your <span className="special-color">Financial Journey</span> with ArthGyan
                     </h1>
                     <p>
                         Discover the world of finance and enhance your financial literacy with our AI-powered chatbot, insightful finance blogs, latest market trends, SIP calculator, and engaging finance quiz.
                     </p>
                     <div className="btn-cont">
-                        <button className="btn-cont-1">Get Started</button>
-                        <button className="btn-cont-2">Learn More</button>
+                        <button onClick={get_started} className="btn-cont-1">FinBot</button>
+                        <button onClick={learn_more} className="btn-cont-2">Blogs</button>
                     </div>
                 </div>
                 <div className="p1-content-right">
-                    <video src={video}  autoPlay 
-                muted 
-                loop 
-                preload="auto" 
-
-                playsInline 
-                disablePictureInPicture
-                 />
+                    <video 
+                        src={video} 
+                        autoPlay 
+                        muted 
+                        loop 
+                        preload="auto" 
+                        playsInline 
+                        disablePictureInPicture
+                    />
                 </div>
             </div>
             <div className="p2-content">
@@ -38,13 +59,13 @@ export default function HomeRoute() {
                     FinVeda provides personalised financial advice, up-to-date market trends, and interactive tools to help you learn finance with finesse. Whether you're a beginner or an expert, our AI Chatbot, Finance Blogs, Market Trends, SIP Calculator, and Finance Quiz have got you covered.
                 </p>
                 <div className="cards">
-                    <div className="upto-card card" >
+                    <div className="upto-card card">
                         <img src={icon} alt="" />
                         <h3>Up-to-Date Market </h3>
                         <h3 className="change-h3">Trends</h3>
                     </div>
                     <div className="person-card card">
-                    <img src={icon} alt="" />
+                        <img src={icon} alt="" />
                         <h3>Personalised Financial</h3>
                         <h3 className="change-h3">Advice</h3>
                     </div>
@@ -52,17 +73,14 @@ export default function HomeRoute() {
                         <img src={icon} alt="" />
                         <h3>Interactive Financial </h3>
                         <h3 className="change-h3">Tools</h3>
-                        
                     </div>
                 </div>
                 <div className="btn-cont">
-                    <button className="btn-cont-1">Get Started</button>
-                    <button className="btn-cont-2">Learn More</button>
+                    <button onClick={get_started_trends} className="btn-cont-1">Trends</button>
+                    <button onClick={learn_more_tools} className="btn-cont-2">Tools</button>
                 </div>
-
-
             </div>
-            <Footer/>
+            <Footer />
         </div>
-    )
+    );
 }
