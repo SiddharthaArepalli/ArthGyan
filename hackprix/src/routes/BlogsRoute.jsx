@@ -12,7 +12,7 @@ const BlogsRoute = () => {
   return (
     <>
       <Navbar />
-      <div className='cards'>
+      <div className='cards-blog'>
         <BlogCard img_path={img1} blogId={1} desc={"How to 10x your Generational Wealth?"} />
         <BlogCard img_path={img2} blogId={2} desc={"How to deal with Unknown Risks in Life and Investing?"} />
         <BlogCard img_path={img3} blogId={3} desc={"Why investing in stocks is better than fixed deposit?"} />
