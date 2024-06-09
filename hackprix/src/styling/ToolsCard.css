@@ -19,13 +19,13 @@
 }
 
 .tool-img {
-    background-size: cover;
-    background-position: center;
-    /* width: 100%; */
-    /* width: 300px; */
-    /* height: 200px; */
+    background-size: contain;
+    /* background-position: center; */
+    background-repeat: no-repeat;
     height: 150px;
     width: 90%;
+    float: left; /* Positions the image on the left */
+    margin-right: 10px; /* Adds some space to the right of the image */
 }
 
 .tool-title {
@@ -37,7 +37,12 @@
     font-size: 1em;
     margin: 16px;
     color: #555;
+
+
 }
+
+
+
 
 /* a {
     display: inline-block;

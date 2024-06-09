@@ -65,14 +65,16 @@ nav li a:active{
     color: white;
 }
 .btn-join{
+    display: block;
+    text-align: center;
     font-size: 18px;
     border-radius: 10px;
      height: 40px;
-     width: 200px;
+     width: 180px;
      border: none;
      color: #436AF5;
      cursor: pointer;
      font-weight: 300;
-     padding-top: 5px;
+     padding: 5px;
      background-color: white;
 }

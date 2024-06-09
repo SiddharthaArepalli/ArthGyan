@@ -1,3 +1,4 @@
+// TradingViewWidget.jsx
 import React, { useEffect, useRef, memo } from 'react';
 
 function TradingViewWidget() {
@@ -9,22 +10,22 @@ function TradingViewWidget() {
       script.src = "https://s3.tradingview.com/external-embedding/embed-widget-crypto-coins-heatmap.js";
       script.type = "text/javascript";
       script.async = true;
-      script.innerHTML = 
+      script.innerHTML = `
         {
           "dataSource": "Crypto",
           "blockSize": "market_cap_calc",
           "blockColor": "change",
           "locale": "en",
           "symbolUrl": "",
-          "colorTheme": "dark",
-          "hasTopBar": false,
-          "isDataSetEnabled": false,
-          "isZoomEnabled": true,
+          "colorTheme": "light",
+          "hasTopBar": true,
+          "isDataSetEnabled": true,
+          "isZoomEnabled": false,
           "hasSymbolTooltip": true,
           "isMonoSize": false,
-          "width": "100%",
-          "height": "100%"
-        };
+          "width": 900,
+          "height": 500
+        }`;
       container.current.appendChild(script);
     },
     []
