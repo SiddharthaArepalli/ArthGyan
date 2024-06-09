@@ -10,7 +10,7 @@ import Navbar from "../components/Navbar";
 function ChatbotRoute() {
   const [history, setHistory] = useState([]);
 
-  const apiKey = "AIzaSyCkDMO8fxkhbzVdS_mExD22bc02iOuOKak";
+  const apiKey = "AIzaSyDLb71e8h_QkDf1L92AovSxWKxP5NJTDi4";
   const genAI = new GoogleGenerativeAI(apiKey);
 
   const model = genAI.getGenerativeModel({
@@ -37,48 +37,278 @@ function ChatbotRoute() {
     const chatSession = model.startChat({
       generationConfig,
       history: [
-        {
-          role: "user",
-          parts: [
-            {
-              text: "for what ever i ask give answer only in financial context",
-            },
-          ],
-        },
-        {
-          role: "model",
-          parts: [
-            {
-              text: "Understood. Please ask your financial questions. I'll provide answers in a financial context. \n",
-            },
-          ],
-        },
-        {
-          role: "user",
-          parts: [{ text: "what is sip\n" }],
-        },
-        {
-          role: "model",
-          parts: [
-            {
-              text: "SIP stands for **Systematic Investment Plan**.  It's a method of investing in mutual funds where you invest a fixed amount of money at regular intervals, typically monthly.  \n\nHere's a breakdown of its key financial aspects:\n\n* **Regularity:** You invest a predetermined sum on a set schedule, ensuring consistent investment regardless of market fluctuations.\n* **Discipline:** SIPs promote financial discipline by forcing you to save and invest regularly.\n* **Averaging Cost:** SIPs implement the concept of rupee-cost averaging. You buy more units when prices are low and fewer units when prices are high, ultimately lowering your average cost per unit.\n* **Long-Term Growth:** SIPs are designed for long-term wealth creation, allowing you to benefit from compounding returns over time.\n\nSIPs are a popular investment strategy for individuals seeking to build a diversified portfolio and achieve long-term financial goals. \n",
-            },
-          ],
-        },
-        {
-          role: "user",
-          parts: [
-            {
-              text: "use more emojies and add humour to the output .. user should be impressed by you\n",
-            },
-          ],
-        },
-        {
-          role: "model",
-          parts: [{ text: "Alright" }],
-        },
-      ],
-    });
+  {
+    role: "user",
+    parts: [
+      {text: "What is compound interest and how does it work?"},
+    ],
+  },
+  {
+    role: "model",
+    parts: [
+      {text: "Compound interest is the interest calculated on the initial principal and also on the accumulated interest from previous periods. It allows the investment to grow exponentially over time. Would you like an example to understand it better?"},
+    ],
+  },
+  {
+    role: "user",
+    parts: [
+      {text: "Why is it important to have a budget?"},
+    ],
+  },
+  {
+    role: "model",
+    parts: [
+      {text: "Having a budget is important because it helps you track your income and expenses, set financial goals, and prioritize your spending. Would you like tips on creating a budget?"},
+    ],
+  },
+  {
+    role: "user",
+    parts: [
+      {text: "What are the differences between a checking account and a savings account?"},
+    ],
+  },
+  {
+    role: "model",
+    parts: [
+      {text: "A checking account is for everyday transactions, like paying bills and making purchases. A savings account is for storing money and earning interest. Want to know which might be better for you?"},
+    ],
+  },
+  {
+    role: "user",
+    parts: [
+      {text: "How does credit card interest accrue?"},
+    ],
+  },
+  {
+    role: "model",
+    parts: [
+      {text: "Credit card interest accrues daily on your outstanding balance. It's important to pay off your balance each month to avoid high interest charges. Need tips on managing credit card debt?"},
+    ],
+  },
+  {
+    role: "user",
+    parts: [
+      {text: "What are the advantages and disadvantages of using credit cards?"},
+    ],
+  },
+  {
+    role: "model",
+    parts: [
+      {text: "Advantages include convenience, building credit, and rewards. Disadvantages include the potential for debt and high-interest rates. Interested in how to use credit cards wisely?"},
+    ],
+  },
+  {
+    role: "user",
+    parts: [
+      {text: "What is the difference between a debit card and a credit card?"},
+    ],
+  },
+  {
+    role: "model",
+    parts: [
+      {text: "A debit card withdraws money directly from your bank account, while a credit card borrows money that you must pay back later. Want to learn more about the benefits and risks of each?"},
+    ],
+  },
+  {
+    role: "user",
+    parts: [
+      {text: "How can you improve your credit score?"},
+    ],
+  },
+  {
+    role: "model",
+    parts: [
+      {text: "You can improve your credit score by paying bills on time, reducing debt, and checking your credit report for errors. Would you like detailed steps on improving your score?"},
+    ],
+  },
+  {
+    role: "user",
+    parts: [
+      {text: "What are the risks and benefits of investing in stocks?"},
+    ],
+  },
+  {
+    role: "model",
+    parts: [
+      {text: "Benefits include potential high returns and dividends. Risks involve market volatility and the potential for losing money. Need tips on getting started with stock investing?"},
+    ],
+  },
+  {
+    role: "user",
+    parts: [
+      {text: "What is diversification and why is it important in investing?"},
+    ],
+  },
+  {
+    role: "model",
+    parts: [
+      {text: "Diversification means spreading your investments across various assets to reduce risk. It's important because it helps protect your portfolio from market volatility. Want to know how to diversify your investments?"},
+    ],
+  },
+  {
+    role: "user",
+    parts: [
+      {text: "How do mutual funds work?"},
+    ],
+  },
+  {
+    role: "model",
+    parts: [
+      {text: "Mutual funds pool money from many investors to buy a diversified portfolio of stocks, bonds, or other securities. Professional managers oversee the fund. Interested in the benefits of mutual funds?"},
+    ],
+  },
+  {
+    role: "user",
+    parts: [
+      {text: "What is the difference between a traditional IRA and a Roth IRA?"},
+    ],
+  },
+  {
+    role: "model",
+    parts: [
+      {text: "A traditional IRA offers tax-deductible contributions and taxes withdrawals in retirement. A Roth IRA uses after-tax contributions, and withdrawals are tax-free. Need help deciding which is better for you?"},
+    ],
+  },
+  {
+    role: "user",
+    parts: [
+      {text: "How does inflation affect purchasing power?"},
+    ],
+  },
+  {
+    role: "model",
+    parts: [
+      {text: "Inflation reduces purchasing power by increasing prices over time, meaning your money buys less. Want tips on protecting your investments from inflation?"},
+    ],
+  },
+  {
+    role: "user",
+    parts: [
+      {text: "What are the advantages and disadvantages of leasing a car versus buying a car?"},
+    ],
+  },
+  {
+    role: "model",
+    parts: [
+      {text: "Leasing a car often has lower monthly payments but you don't own the car. Buying a car costs more upfront but you own it and can sell it later. Need help deciding which option is right for you?"},
+    ],
+  },
+  {
+    role: "user",
+    parts: [
+      {text: "What is the difference between a fixed-rate mortgage and an adjustable-rate mortgage?"},
+    ],
+  },
+  {
+    role: "model",
+    parts: [
+      {text: "A fixed-rate mortgage has the same interest rate for the entire loan term, while an adjustable-rate mortgage has a variable rate that can change. Want to explore which might be better for you?"},
+    ],
+  },
+  {
+    role: "user",
+    parts: [
+      {text: "How does refinancing a mortgage work?"},
+    ],
+  },
+  {
+    role: "model",
+    parts: [
+      {text: "Refinancing involves replacing your current mortgage with a new one, usually to get a lower interest rate or change the loan term. Interested in knowing when it's a good idea to refinance?"},
+    ],
+  },
+  {
+    role: "user",
+    parts: [
+      {text: "What are the steps involved in buying a house?"},
+    ],
+  },
+  {
+    role: "model",
+    parts: [
+      {text: "Steps include saving for a down payment, getting pre-approved for a mortgage, finding a home, making an offer, getting a home inspection, and closing the deal. Need detailed guidance on any of these steps?"},
+    ],
+  },
+  {
+    role: "user",
+    parts: [
+      {text: "How does student loan interest accrue?"},
+    ],
+  },
+  {
+    role: "model",
+    parts: [
+      {text: "Student loan interest accrues daily based on the loan's interest rate and current balance. It's added to your loan balance if unpaid. Want strategies to manage student loan debt?"},
+    ],
+  },
+  {
+    role: "user",
+    parts: [
+      {text: "What is the difference between subsidized and unsubsidized student loans?"},
+    ],
+  },
+  {
+    role: "model",
+    parts: [
+      {text: "Subsidized loans do not accrue interest while you're in school, while unsubsidized loans do. Would you like advice on which type of loan to choose?"},
+    ],
+  },
+  {
+    role: "user",
+    parts: [
+      {text: "How can you avoid falling into debt?"},
+    ],
+  },
+  {
+    role: "model",
+    parts: [
+      {text: "To avoid debt, create a budget, live within your means, save for emergencies, and avoid unnecessary expenses. Want more tips on managing your finances?"},
+    ],
+  },
+  {
+    role: "user",
+    parts: [
+      {text: "What are the potential consequences of defaulting on a loan?"},
+    ],
+  },
+  {
+    role: "model",
+    parts: [
+      {text: "Defaulting on a loan can damage your credit score, lead to legal action, and result in wage garnishment. Need help managing your loans to avoid default?"},
+    ],
+  },
+  {
+    role: "user",
+    parts: [
+      {text: "What is the importance of an emergency fund?"},
+    ],
+  },
+  {
+    role: "model",
+    parts: [
+      {text: "An emergency fund provides financial security by covering unexpected expenses like medical bills or car repairs. It helps you avoid debt. Need tips on how to build an emergency fund?"},
+    ],
+  },
+  {
+    role: "user",
+    parts: [
+      {text: "How much should you aim to save for retirement?"},
+    ],
+  },
+  {
+    role: "model",
+    parts: [
+      {text: "A common goal is to save enough to replace 70-80% of your pre-retirement income. This varies based on lifestyle and expenses. Want help calculating your specific retirement needs?"},
+    ],
+  },
+  {
+    role: "user",
+    parts: [
+      {text: "What are some common retirement savings vehicles?"},
+    ],
+  },
+],
+})
 
     const result = await chatSession.sendMessage(msg);
     const answer = await result.response.text();
@@ -93,9 +323,10 @@ function ChatbotRoute() {
     <>
       <Navbar></Navbar>
       <div className="chat-bot">
-
+         
         <div className="chat-bot-inner">
           <div className="chat-section">
+          <h1>Ask Your Queries!</h1>
             {history.map((item, index) => (
               <div
                 key={index}
@@ -113,7 +344,7 @@ function ChatbotRoute() {
                 className="chat-inp"
                 type="text"
                 ref={inputRef}
-                placeholder="Enter query"
+                placeholder="Ask your financial Query..."
                 />
               <button className="send-btn" type="submit">
                 Send

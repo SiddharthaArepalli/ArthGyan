@@ -7,9 +7,11 @@
 .chat-bot-inner{
   width: 900px;
   height: 90vh;
-  background-color: rgb(205, 232, 255);
+  background-color: rgb(239, 245, 251);
   display: flex;
   flex-direction: column;
+ 
+  
 }
 
 .chat-section {
@@ -41,25 +43,33 @@
 }
 
 .send-section {
+  border-radius: 8px;
   margin-top: auto; /* Push the send section to the bottom */
   padding: 20px; /* Add padding for better appearance */
-  background-color: #6294ac;
+  background-color: #436af5;
 }
 
 .send-section input {
-  height: 40px; /* Reduce height for better appearance */
-  width: calc(100% - 100px); /* Adjust width to fill available space */
+  height: 60px; /* Reduce height for better appearance */
+  width: 750px;/* Adjust width to fill available space */
   padding: 0px 20px;
-  border: 2px solid #436af5;
-  border-radius: 18px;
+  border: none;
+  background-color: white;
+  border-radius: 10px;
   margin-right: 10px; /* Add some margin between input and button */
+}
+.send-section input::placeholder{
+  
+  font-size: 16px;
+  font-weight: 200;
 }
 
 .send-btn {
-  height: 40px; /* Reduce height for better appearance */
+  height: 60px; 
+  width: 100px;/* Reduce height for better appearance */
   padding: 0 20px; /* Adjust padding for better appearance */
-  border: 2px solid #436af5;
+  border: 2px solid #ffffff;
   border-radius: 18px;
-  background-color: #859df142;
+  background:none;
   cursor: pointer;
 }
