@@ -20,7 +20,7 @@ const TrendsRoute = () => {
       <div className="inner-contain">
         <div className="inner-container-1">
           <div className="inner-container-1-content">
-          <h1>Learn real time <span className='special-color'>Crypto Currency</span> value</h1>
+          <h1>Learn real time <span className='special-color'>Cypto Currency</span> value</h1>
           <p>Introducing CryptoWatch, a sleek widget that displays real-time cryptocurrency values, helping you stay updated with the latest market trends at a glance.</p>
           </div>
           <TradingViewWidget ></TradingViewWidget>

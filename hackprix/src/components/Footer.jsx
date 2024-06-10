@@ -15,7 +15,7 @@ function Footer() {
                 </div>
 
                 <div className="news-letter">
-                    <h1>SUBSCRIBE.</h1>
+                    <h1>SUBSCRIBE</h1>
                     <p>Join our newsletter to stay up to date on features and releases.</p>
                     <input type="text" placeholder="Enter your email.." />
                 </div>
