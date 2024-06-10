@@ -15,7 +15,6 @@ ArthGyan aims to improve financial literacy among adults in India. According to 
 ## Tech Stack 🖥️
 
 - **Frontend**: React ⚛️
-- **Backend**: Node.js (or other back-end technology, specify if applicable) 🟢
 - **Build Tool**: Vite ⚡
 - **Package Management**: npm 📦
 
