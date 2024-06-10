@@ -4,7 +4,7 @@
 
 Right now, 79% of Indians are navigating their financial lives without adequate knowledge. That's like sailing through treacherous waters without a map. But what if we could change that?
 We are proud to present 'ArthGyan,' a dynamic platform designed to bridge the vast financial literacy gap in India. Our mission? To transform complex financial concepts into accessible, engaging, and actionable knowledge for everyone
-
+---
 📹 Check out our journey in this video: [Watch Video]([https://www.example.com/your-video-link](https://youtu.be/J9a4KjAEESg?si=EsI8ibXqx5w3LoKs))
 
 ## Features ✨
