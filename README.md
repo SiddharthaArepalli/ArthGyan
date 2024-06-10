@@ -2,7 +2,9 @@
 
 ## Introduction
 
-ArthGyan aims to improve financial literacy among adults in India. According to a survey by the OECD, only 38% of adults in India are financially literate. ArthGyan addresses this issue by providing a comprehensive platform for financial literacy education, including various tools, blogs, trends, and a chatbot for resolving queries easily. Additionally, we are building a community to share financial knowledge.
+Right now, 79% of Indians are navigating their financial lives without adequate knowledge. That's like sailing through treacherous waters without a map. But what if we could change that?
+We are proud to present 'ArthGyan,' a dynamic platform designed to bridge the vast financial literacy gap in India. Our mission? To transform complex financial concepts into accessible, engaging, and actionable knowledge for everyone
+
 
 ## Features ✨
 
