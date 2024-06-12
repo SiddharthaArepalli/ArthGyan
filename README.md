@@ -1,4 +1,4 @@
-# ArthGyan 🎓💰
+# ArthGyan 💰
 
 ## Introduction
 
